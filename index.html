@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F5EFE6">
+<meta name="description" content="هتون HATOON — أزياء نسائية بتفاصيل تشبهكِ.">
+<title>هتون HATOON | أزياء نسائية</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="config.js"></script>
+<script defer src="products.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body data-page="home">
+<div class="announcement">أناقة هادئة.. تفاصيل صُنعت لتشبهكِ</div>
+<header class="site-header"><div class="header-inner">
+<button class="icon-button menu-toggle" id="menu-toggle" aria-label="فتح القائمة" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" fill="none" stroke-width="1.5"/></svg></button>
+<nav class="main-nav" id="main-nav" aria-label="القائمة الرئيسية"><a href="index.html">الرئيسية والمنتجات</a><a href="contact.html">تواصل معنا</a></nav>
+<a class="brand" href="index.html" aria-label="هتون الصفحة الرئيسية"><span class="brand-ar">هتون</span><span class="brand-en">HATOON</span></a>
+<div class="header-actions"><a class="icon-link" href="index.html#products" aria-label="البحث"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></a><a class="icon-link" href="favorites.html" aria-label="المفضلة"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg><span class="count" data-fav-count>0</span></a><a class="icon-link" href="cart.html" aria-label="سلة المشتريات"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.3 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg><span class="count" data-cart-count>0</span></a></div>
+</div></header>
+<main>
+<section class="hero"><div class="hero-content"><span class="eyebrow">HATOON · COLLECTION</span><h1>أناقة هادئة..<br>وتفاصيل تشبهكِ</h1><p>قطع نسائية مختارة بعناية، نبدأ بها رحلتنا معكِ. اكتشفي مجموعتنا الأولى واختاري ما يشبه ذوقكِ.</p><a class="btn btn-light" href="#products">اكتشفي المنتجات <span aria-hidden="true">←</span></a></div></section>
+
+<section class="container section" id="products"><div class="section-head"><span class="eyebrow">مجموعة هتون الأولى</span><h2>تسوّقي المنتجات</h2><p>نحن في بداية رحلتنا، ونضيف اختياراتنا بعناية. يسعدنا أن تكوني جزءًا من البداية.</p></div>
+<div class="toolbar"><input id="product-search" class="field" type="search" placeholder="ابحثي عن منتج..." aria-label="البحث عن المنتجات"><div class="filter-row">
+<select class="filter-select" id="filter-price" aria-label="فلترة السعر"><option value="">كل الأسعار</option><option value="0-350">حتى 350 ر.س</option><option value="351-450">351–450 ر.س</option><option value="451-10000">أكثر من 450 ر.س</option></select>
+<select class="filter-select" id="filter-size" aria-label="فلترة المقاس"><option value="">كل المقاسات</option><option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option></select>
+<select class="filter-select" id="filter-color" aria-label="فلترة اللون"><option value="">كل الألوان</option><option>أسود</option><option>موكا</option><option>بني</option><option>بني داكن</option><option>رملي</option><option>عاجي</option><option>وردي غباري</option><option>عنابي</option><option>زيتي</option><option>بيج</option></select>
+<select class="filter-select" id="sort-products" aria-label="ترتيب المنتجات"><option value="new">الأحدث أولًا</option><option value="price-asc">السعر: الأقل أولًا</option><option value="price-desc">السعر: الأعلى أولًا</option></select></div><span class="result-count" id="result-count"></span></div><div class="product-grid" id="all-products"></div></section>
+<section class="newsletter"><h2>عندكِ سؤال؟ نحن هنا</h2><p>يسعدنا مساعدتكِ في اختيار المقاس أو الاستفسار عن أي قطعة.</p><a class="btn btn-light" href="contact.html">تواصلي معنا</a></section>
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-ar">هتون</span><span class="brand-en">HATOON</span></a><p>هتون.. تفاصيل تشبهكِ<br>أزياء نسائية بتفاصيل هادئة ومدروسة.</p></div><div><h3>تسوقي</h3><div class="footer-links"><a href="index.html#products">جميع المنتجات</a></div></div><div><h3>تواصلي معنا</h3><div class="footer-links"><a href="contact.html">خدمة العميلات</a><a href="https://www.instagram.com/" target="_blank" rel="noopener">إنستغرام</a><a href="cart.html">سلة المشتريات</a></div><p class="legal-note">تأكدي من تحديث بيانات التواصل قبل إطلاق المتجر.</p></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> هتون HATOON. جميع الحقوق محفوظة.</span><span>صُمّم بعناية ليشبه هويتكِ.</span></div></div></footer>
+<div class="modal-backdrop" id="size-modal" role="dialog" aria-modal="true" aria-labelledby="size-guide-title"><div class="modal"><button class="modal-close" data-modal-close aria-label="إغلاق">×</button><h2 id="size-guide-title">دليل المقاسات</h2><p class="muted-note">هذا جدول إرشادي عام. اعتمدي جدول القياسات الفعلي للمنتج قبل النشر.</p><table class="size-table"><thead><tr><th>المقاس</th><th>الصدر (سم)</th><th>الخصر (سم)</th></tr></thead><tbody><tr><td>S</td><td>84–88</td><td>66–70</td></tr><tr><td>M</td><td>89–94</td><td>71–76</td></tr><tr><td>L</td><td>95–101</td><td>77–83</td></tr><tr><td>XL</td><td>102–109</td><td>84–91</td></tr></tbody></table><p><button class="btn" data-modal-close>إغلاق</button></p></div></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>

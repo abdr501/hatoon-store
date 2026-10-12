@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#F5EFE6">
+<meta name="description" content="هتون HATOON — أزياء نسائية بتفاصيل تشبهكِ.">
+<title>إتمام الطلب | HATOON هتون</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="config.js"></script>
+<script defer src="products.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body data-page="checkout">
+<div class="announcement">أناقة هادئة.. تفاصيل صُنعت لتشبهكِ</div>
+<header class="site-header"><div class="header-inner">
+<button class="icon-button menu-toggle" id="menu-toggle" aria-label="فتح القائمة" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" fill="none" stroke-width="1.5"/></svg></button>
+<nav class="main-nav" id="main-nav" aria-label="القائمة الرئيسية"><a href="index.html">الرئيسية والمنتجات</a><a href="contact.html">تواصل معنا</a></nav>
+<a class="brand" href="index.html" aria-label="هتون الصفحة الرئيسية"><span class="brand-ar">هتون</span><span class="brand-en">HATOON</span></a>
+<div class="header-actions"><a class="icon-link" href="index.html#products" aria-label="البحث"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></a><a class="icon-link" href="favorites.html" aria-label="المفضلة"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg><span class="count" data-fav-count>0</span></a><a class="icon-link" href="cart.html" aria-label="سلة المشتريات"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.3 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg><span class="count" data-cart-count>0</span></a></div>
+</div></header>
+<main>
+
+<section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">الرئيسية</a> / <a href="cart.html">السلة</a> / إتمام الطلب</div><h1 class="page-title">تفاصيل التوصيل</h1><p>راجعي بياناتكِ، ثم جهّزي الطلب عبر واتساب.</p></div></section>
+<section class="container checkout-layout"><div><div id="checkout-notice" class="notice hidden" role="alert"></div><form id="checkout-form" novalidate><div class="form-grid">
+<div class="form-field"><label for="customer-name">الاسم الكامل *</label><input class="field" id="customer-name" name="name" required autocomplete="name"><div class="error-text"></div></div>
+<div class="form-field"><label for="customer-phone">رقم الجوال *</label><input class="field" id="customer-phone" name="phone" type="tel" required autocomplete="tel" placeholder="05xxxxxxxx"><div class="error-text"></div></div>
+<div class="form-field"><label for="customer-city">المدينة *</label><input class="field" id="customer-city" name="city" required autocomplete="address-level2"><div class="error-text"></div></div>
+<div class="form-field"><label for="customer-district">الحي *</label><input class="field" id="customer-district" name="district" required autocomplete="address-level3"><div class="error-text"></div></div>
+<div class="form-field full"><label for="customer-address">العنوان بالتفصيل *</label><textarea class="field" id="customer-address" name="address" required autocomplete="street-address" placeholder="اسم الشارع، رقم المبنى، علامة مميزة..."></textarea><div class="error-text"></div></div>
+<div class="form-field full"><label for="customer-notes">ملاحظات إضافية (اختياري)</label><textarea class="field" id="customer-notes" name="notes" placeholder="أي تفاصيل ترغبين بإضافتها"></textarea></div>
+</div><p class="muted-note">لن يتم تحصيل أي مبلغ عبر هذا النموذج. عند المتابعة ستنتقلين إلى واتساب مع تفاصيل الطلب جاهزة، ثم اضغطي إرسال.</p><button id="checkout-submit" class="btn" type="submit" style="width:100%">إرسال الطلب عبر واتساب</button></form></div>
+<aside class="summary-card"><h2>ملخص طلبكِ</h2><div id="checkout-summary-items" class="order-summary-list"></div><div class="summary-line summary-total"><span>الإجمالي قبل الشحن</span><span id="checkout-total">0 ر.س</span></div><p class="muted-note">الشحن غير محسوب؛ ستُؤكد تكلفته قبل إتمام الطلب.</p></aside></section>
+
+</main>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-ar">هتون</span><span class="brand-en">HATOON</span></a><p>هتون.. تفاصيل تشبهكِ<br>أزياء نسائية بتفاصيل هادئة ومدروسة.</p></div><div><h3>تسوقي</h3><div class="footer-links"><a href="index.html#products">جميع المنتجات</a><a href="index.html?category=عبايات#products">العبايات</a><a href="index.html?category=فساتين#products">الفساتين</a><a href="index.html?category=أطقم#products">الأطقم</a></div></div><div><h3>تواصلي معنا</h3><div class="footer-links"><a href="contact.html">خدمة العميلات</a><a href="https://www.instagram.com/" target="_blank" rel="noopener">إنستغرام</a><a href="cart.html">سلة المشتريات</a></div><p class="legal-note">تأكدي من تحديث بيانات التواصل قبل إطلاق المتجر.</p></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> هتون HATOON. جميع الحقوق محفوظة.</span><span>صُمّم بعناية ليشبه هويتكِ.</span></div></div></footer>
+<div class="modal-backdrop" id="size-modal" role="dialog" aria-modal="true" aria-labelledby="size-guide-title"><div class="modal"><button class="modal-close" data-modal-close aria-label="إغلاق">×</button><h2 id="size-guide-title">دليل المقاسات</h2><p class="muted-note">هذا جدول إرشادي عام. اعتمدي جدول القياسات الفعلي للمنتج قبل النشر.</p><table class="size-table"><thead><tr><th>المقاس</th><th>الصدر (سم)</th><th>الخصر (سم)</th></tr></thead><tbody><tr><td>S</td><td>84–88</td><td>66–70</td></tr><tr><td>M</td><td>89–94</td><td>71–76</td></tr><tr><td>L</td><td>95–101</td><td>77–83</td></tr><tr><td>XL</td><td>102–109</td><td>84–91</td></tr></tbody></table><p><button class="btn" data-modal-close>إغلاق</button></p></div></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>
